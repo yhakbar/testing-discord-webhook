@@ -13,6 +13,7 @@ jobs:
       - name: Announce Release
         run: ./.github/scripts/announce-release.sh
         env:
+          GH_TOKEN: ${{ github.token }}
           URL: ${{ secrets.RELEASE_ANNOUNCEMENT_URL }}
           REPO: ${{ github.repository }}
           ROLE_ID: ${{ secrets.RELEASE_ANNOUNCEMENT_ROLE_ID }}
