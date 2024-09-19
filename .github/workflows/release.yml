@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Announce Release
-        run: ./github/scripts/announce-release.sh
+        run: ./.github/scripts/announce-release.sh
         env:
           URL: ${{ secrets.RELEASE_ANNOUNCEMENT_URL }}
           REPO: ${{ github.repository }}
