@@ -15,6 +15,6 @@ jobs:
         env:
           URL: ${{ secrets.RELEASE_ANNOUNCEMENT_URL }}
           REPO: ${{ github.repository }}
-          ROLE_ID: ${{ secrets.ROLE_ID }}
+          ROLE_ID: ${{ secrets.RELEASE_ANNOUNCEMENT_ROLE_ID }}
           USERNAME: ${{ secrets.RELEASE_ANNOUNCEMENT_USERNAME }}
           AVATAR_URL: ${{ secrets.RELEASE_ANNOUNCEMENT_AVATAR_URL }}
